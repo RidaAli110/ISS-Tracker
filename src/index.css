@@ -1,1 +1,42 @@
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import 'tailwindcss';
+
+:root {
+  /* Backgrounds */
+  --bg-primary: #080d1a;
+  --bg-card: #111b2e;
+  --bg-secondary: #1a2940;
+
+  /* Buttons */
+  --btn-bg: #17243a;
+  --btn-text: #f1f5f9;
+
+  --btn-s-bg: #101c30;
+  --btn-s-hover: #1a2a42;
+
+  --btn-hover: #223550;
+  --btn-border: #293950;
+
+  /* Borders */
+  --border-color: #293950;
+
+  /* Text */
+  --text-primary: #f1f5f9;
+  --text-secondary: #94a3b8;
+
+  /* Accents */
+  --accent-primary: #38bdf8;
+  --accent-success: #4ade80;
+
+  /* Icons */
+  --icon-primary: #94a3b8;
+  --icon-active: #38bdf8;
+  --icon-hover: #7dd3fc;
+  --icon-decor: #64748b;
+}
+
+body {
+  background-color: var(--bg-primary);
+  font-family: 'Space Grotesk', sans-serif;
+  margin: 1rem;
+}
