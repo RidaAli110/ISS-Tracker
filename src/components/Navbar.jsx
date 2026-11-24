@@ -22,8 +22,8 @@ export default function NavBar() {
               `flex items-center gap-2 ${isActive ? 'active' : ''}`
             }
           >
-            <Telescope size={20} />
-            <p className=' hidden md:block'>Home</p>
+            <Telescope size={23} />
+            <p className=' hidden md:block font-semibold'>Home</p>
           </NavLink>
           <NavLink
             to='/about'
@@ -33,7 +33,7 @@ export default function NavBar() {
             }
           >
             <Rocket size={20} />
-            <p className=' hidden md:block md:text-sm'>About</p>
+            <p className=' hidden md:block font-semibold'>About</p>
           </NavLink>
           <NavLink
             to='/news'
@@ -43,7 +43,7 @@ export default function NavBar() {
             }
           >
             <Newspaper size={20} />
-            <p className=' hidden md:block md:text-sm'>Space News</p>
+            <p className=' hidden md:block font-semibold'>Space News</p>
           </NavLink>
         </div>
       </nav>
