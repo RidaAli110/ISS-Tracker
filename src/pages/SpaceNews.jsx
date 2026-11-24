@@ -1,6 +1,10 @@
-
+import NavBar from '../components/Navbar';
 function SpaceNews() {
-  return <h1>Space News</h1>;
+  return (
+    <>
+      <NavBar />
+    </>
+  );
 }
 
 export default SpaceNews;

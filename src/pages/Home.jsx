@@ -1,5 +1,9 @@
+import NavBar from "../components/Navbar";
+
 function Home() {
-  return <h1>ISS Tracker</h1>;
+  return (
+    <NavBar />
+  )
 }
 
 export default Home;

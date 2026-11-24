@@ -1,5 +1,11 @@
+import NavBar from '../components/Navbar';
+
 function About() {
-  return <h1>About the ISS</h1>;
+  return (
+    <>
+      <NavBar />
+    </>
+  );
 }
 
 export default About;

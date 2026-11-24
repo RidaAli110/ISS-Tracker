@@ -40,3 +40,22 @@ body {
   font-family: 'Space Grotesk', sans-serif;
   margin: 1rem;
 }
+
+nav a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--icon-primary);
+  transition: color 200ms ease;
+}
+
+nav a:hover {
+  color: var(--icon-hover);
+}
+.active {
+  color: var(--icon-active);
+}
+
+
+
+
