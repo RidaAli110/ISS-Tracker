@@ -2,7 +2,7 @@ export default function StatsBar() {
   return (
     <section
       aria-label='ISS statistics'
-      className='mx-auto mt-4 min-[600px]:mt-8 w-full lg:w-5xl shadow-lg shadow-black/20'
+      className='mx-auto mt-4 min-[600px]:mt-10 w-full min-[1100px]:w-5xl shadow-lg shadow-black/20'
     >
       <dl className='grid grid-cols-2 min-[600px]:grid-cols-4 place-items-center text-center p-2 min-[600px]:p-5 bg-(--bg-card) rounded-lg'>
         <div className='flex flex-col items-center gap-1 w-full py-2 border-r border-b border-(--border-color) min-[600px]:border-b-0'>
