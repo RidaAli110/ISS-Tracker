@@ -60,3 +60,55 @@ h1 {
   font-family: 'Oxanium', sans-serif;
   font-weight: 600;
 }
+
+/* Map controls container */
+.maplibregl-ctrl-group {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: none;
+}
+
+/* Individual control buttons */
+.maplibregl-ctrl-group button {
+  background-color: var(--bg-card);
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* Control button hover */
+.maplibregl-ctrl-group button:hover {
+  background-color: var(--bg-secondary);
+}
+
+/* Control icons */
+.maplibregl-ctrl-group button .maplibregl-ctrl-icon {
+  filter: brightness(0) invert(1);
+}
+
+/* Remove the default border between controls */
+.maplibregl-ctrl-group button:last-child {
+  border-bottom: none;
+}
+
+/* Green dot blinking animation */
+.dot {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+}
+
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .dot {
+    animation: none;
+  }
+}
