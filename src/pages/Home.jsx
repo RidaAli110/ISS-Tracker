@@ -1,6 +1,7 @@
 import NavBar from '../components/Navbar';
 import StatsBar from '../components/home-page/StatsBar';
 import IssMap from '../components/map/Map';
+import AltitudeGraph from '../components/map-and-graph/Line-Graph';
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
 
         <StatsBar />
         <IssMap />
+        <AltitudeGraph />
       </main>
     </>
   );
