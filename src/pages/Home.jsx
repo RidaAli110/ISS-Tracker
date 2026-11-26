@@ -1,6 +1,6 @@
 import NavBar from '../components/Navbar';
 import StatsBar from '../components/home-page/StatsBar';
-import IssMap from '../components/map/Map';
+import IssMap from '../components/map-and-graph/Map';
 import AltitudeGraph from '../components/map-and-graph/Line-Graph';
 
 export default function Home() {
