@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <NavBar />
       <main>
-        <h1 className='text-2xl md:text-3xl text-(--text-primary) text-center mt-12 md:mt-17'>
+        <h1 className='text-2xl md:text-3xl text-(--text) text-center mt-12 md:mt-17'>
           Track the International Space Station
         </h1>
 

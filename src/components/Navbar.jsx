@@ -1,7 +1,6 @@
 import { Satellite } from 'lucide-react';
 import { Newspaper } from 'lucide-react';
 import { Rocket } from 'lucide-react';
-import { Telescope } from 'lucide-react';
 import { NavLink } from 'react-router';
 
 export default function NavBar() {
@@ -10,7 +9,7 @@ export default function NavBar() {
       <nav className='flex items-center justify-between'>
         <NavLink to='/' className='flex items-center gap-2 md:gap-3'>
           <Satellite size={34} color='var(--icon-active)' />
-          <span className='text-(--text-primary) text-xl font-semibold hover:text-(--icon-hover) md:text-2xl lg:text-3xl'>
+          <span className='text-(--text) text-xl font-semibold hover:text-(--icon-hover) md:text-2xl lg:text-3xl'>
             ISS Tracker
           </span>
         </NavLink>
@@ -22,7 +21,7 @@ export default function NavBar() {
               `flex items-center gap-2 ${isActive ? 'active' : ''}`
             }
           >
-            <Telescope size={23} />
+            <Satellite size={23} />
             <p className=' hidden md:block font-semibold'>Home</p>
           </NavLink>
           <NavLink

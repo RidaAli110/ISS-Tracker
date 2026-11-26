@@ -25,9 +25,9 @@ export default function AltitudeGraph() {
     >
       <h3
         id='Altitude-graph-heading'
-        className='mb-4 flex items-center justify-center gap-3 text-xl sm:text-2xl font-bold text-(--text-primary)'
+        className='mb-4 flex items-center justify-center gap-3 text-xl sm:text-2xl font-bold text-(--text)'
       >
-        <span className=' dot h-2 w-2 rounded-full bg-(--accent-primary)'></span>
+        <span className=' dot h-2 w-2 rounded-full bg-(--accent-blue)'></span>
         ISS Altitude
       </h3>
 
@@ -35,17 +35,17 @@ export default function AltitudeGraph() {
         <LineChart data={data}>
           <CartesianGrid strokeDasharray='3 3' stroke='var(--border-color)' />
 
-          <XAxis dataKey='time' stroke='var(--text-secondary)' />
+          <XAxis dataKey='time' stroke='var(--text-2)' />
 
           <YAxis
             domain={['dataMin - 5', 'dataMax + 5']}
-            stroke='var(--text-secondary)'
+            stroke='var(--text-2)'
             unit=' km'
           />
 
           <Tooltip
             contentStyle={{
-              backgroundColor: 'var(--bg-secondary)',
+              backgroundColor: 'var(--bg-2)',
               border: '1px solid var(--border-color)',
               borderRadius: '0.4rem',
               color: 'var(--icon-active)',
