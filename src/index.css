@@ -36,7 +36,7 @@
 }
 
 body {
-  background-color: var(--bg-primary);
+  background-color: var(--bg);
   font-family: 'Manrope', sans-serif;
   margin: 1rem 1.5rem;
 }
@@ -78,7 +78,7 @@ h1 {
 
 /* Control button hover */
 .maplibregl-ctrl-group button:hover {
-  background-color: var(--bg-secondary);
+  background-color: var(--bg-2);
 }
 
 /* Control icons */
@@ -91,7 +91,7 @@ h1 {
   border-bottom: none;
 }
 
-/* Green dot blinking animation */
+/* Green and Blue dot blinking animation */
 .dot {
   animation: pulse 2s ease-in-out infinite;
 }
@@ -113,8 +113,51 @@ h1 {
   }
 }
 
-@media (min-width:600px) {
+/* Iss marker */
+.iss-marker-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #080d1a;
+  border: 2px solid var(--icon-active);
+  box-shadow: 0 0 12px #38bdf866;
+  animation: iss-pulse 2s ease-in-out infinite;
+}
+
+.iss-marker {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1);
+}
+
+@keyframes iss-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 8px #38bdf84d;
+    transform: scale(1);
+  }
+
+  50% {
+    box-shadow: 0 0 22px #38bdf8bf;
+    transform: scale(1.08);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .iss-marker-container {
+    animation: none;
+  }
+}
+
+/* media queries */
+@media (min-width: 600px) {
   body {
     margin: 1.2rem 2rem;
   }
 }
+
+/* Animations code from ChatGpt */
+/* Used AI to get ideas for :root color palette */

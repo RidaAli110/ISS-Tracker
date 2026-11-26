@@ -2,7 +2,9 @@ import {
   Map,
   NavigationControl,
   FullscreenControl,
+  Marker,
 } from 'react-map-gl/maplibre';
+import issImage from '../../assets/satelite_5821348.png';
 import { useRef } from 'react';
 
 export default function IssMap() {
@@ -12,9 +14,9 @@ export default function IssMap() {
     <section className='mt-8 min-[600px]:mt-10' aria-labelledby='map-heading'>
       <h2
         id='map-heading'
-        className='mb-4 flex items-center justify-center gap-3 text-xl sm:text-2xl font-bold text-(--text-primary)'
+        className='mb-4 flex items-center justify-center gap-3 text-xl sm:text-2xl font-bold text-(--text)'
       >
-        <span className=' dot h-2 w-2 rounded-full bg-(--accent-success)'></span>
+        <span className=' dot h-2 w-2 rounded-full bg-(--accent-green)'></span>
         ISS Live Location
       </h2>
       <div className='rounded-xl overflow-hidden'>
@@ -84,6 +86,15 @@ export default function IssMap() {
         >
           <NavigationControl position='top-right' />
           <FullscreenControl position='top-right' />
+          <Marker longitude={0} latitude={20} anchor='center'>
+            <div className='iss-marker-container'>
+              <img
+                src={issImage}
+                alt='International Space Station'
+                className='iss-marker'
+              />
+            </div>
+          </Marker>
         </Map>
       </div>
     </section>
